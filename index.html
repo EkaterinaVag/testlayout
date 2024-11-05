@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" >
     <meta name="viewport" content="width=device-width, initial-scale=1.0" >
@@ -36,14 +36,9 @@
             id="header-search"
             placeholder="Поиск"
             type="search"
+            name="header-search"
+            required
           >
-          <button class="header__search-close-button hidden">
-            <img
-              class="header__search-close-button-icon"
-              src="./pics/Close.png"
-              alt="Закрыть"
-            >
-          </button>
         </form>
 
         <div class="header__user">
@@ -104,13 +99,9 @@
               id="nav-search"
               placeholder="Поиск по меню"
               type="search"
+              name="nav-search"
+              required
             >
-            <button class="aside__search-close-button hidden">
-              <img
-                class="header__search-close-button-icon"
-                src="./pics/Close.png"
-                alt="Закрыть"
-              >
             </button>
             <button class="aside__nav-search-pin-button">
               <img
@@ -299,7 +290,7 @@
     <main class="main">
       <div class="subheader">
         <div class="subheader__actions">
-          <p class="subheader__title">Подзадача</p>
+          <h2 class="subheader__title">Подзадача</h2>
           <button class="subheader__button-make">
             <img
               class="subheader__button-make-icon"
@@ -359,6 +350,8 @@
                 id="topic"
                 name="topic"
                 type="text"
+                value=""
+                required
               >
               <button class="form__group-input-button form__group-input-button-close  hidden">
                 <img
@@ -409,6 +402,7 @@
                 id="status"
                 name="status"
                 type="text"
+                value=""
               >
               <button class="form__group-input-button form__group-input-button-close hidden">
                 <img
@@ -464,6 +458,7 @@
                 id="description"
                 name="description"
                 type="text"
+                value=""
               >
               <button class="form__group-input-button form__group-input-button-close hidden">
                 <img
@@ -517,6 +512,7 @@
                 id="product"
                 name="product"
                 type="text"
+                value=""
               >
               <button class="form__group-input-button form__group-input-button-close hidden">
                 <img
@@ -572,6 +568,8 @@
                 id="note"
                 name="note"
                 type="text"
+                value=""
+                required
               >
               <button class="form__group-input-button form__group-input-button-close hidden">
                 <img
@@ -624,6 +622,7 @@
                 id="priority"
                 name="priority"
                 type="text"
+                value=""
               >
               <button class="form__group-input-button form__group-input-button-close hidden">
                 <img
@@ -672,6 +671,7 @@
                 name="response"
                 type="text"
                 class="form__group-input"
+                value=""
               >
               <button class="form__group-input-button form__group-input-button-close">
                 <img
@@ -708,6 +708,7 @@
                 name="group"
                 type="text"
                 class="form__group-input"
+                value=""
               >
               <button class="form__group-input-button form__group-input-button-close">
                 <img
@@ -756,6 +757,7 @@
                 name="comments"
                 type="text"
                 class="form__group-input"
+                value=""
               >
               <button class="form__group-input-button form__group-input-button-close hidden">
                 <img
@@ -804,6 +806,7 @@
                 name="accept"
                 type="text"
                 class="form__group-input"
+                value=""
               >
               <button class="form__group-input-button form__group-input-button-close">
                 <img
@@ -852,6 +855,7 @@
                 name="when_open"
                 type="text"
                 class="form__group-input"
+                value=""
               >
               <button class="form__group-input-button form__group-input-button-close hidden">
                 <img
@@ -905,6 +909,7 @@
                 name="when_made"
                 type="text"
                 class="form__group-input"
+                value=""
               >
               <button class="form__group-input-button form__group-input-button-close hidden">
                 <img
@@ -945,10 +950,10 @@
               <label
                 class="form__group-label"
                 aria-label="Кем открыто"
-                for="kem-otk"
+                for="who_open"
                 >Кем открыто</label
               >
-              <input id="kem-otk" type="text" class="form__group-input" >
+              <input id="who_open" type="text" class="form__group-input" name="who_open" value="" >
               <button class="form__group-input-button form__group-input-button-close">
                 <img
                   class="form__group-input-button-icon"
@@ -986,6 +991,7 @@
                 name="who_made"
                 type="text"
                 class="form__group-input"
+                value=""
               >
               <button class="form__group-input-button form__group-input-button-close">
                 <img
